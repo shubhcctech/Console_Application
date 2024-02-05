@@ -23,7 +23,7 @@ void Rectangle::setPerimeter() {
     perimeter = 2 * (length + width);
 }
  
-int Rectangle::getArea() {
+int Rectangle::area() {
     return area;
 }
  

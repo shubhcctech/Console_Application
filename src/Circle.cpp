@@ -2,11 +2,11 @@
 #include<cmath>
 using namespace std;
  
-Circle::Circle() : area(0), circumference(0) {}
+Circle::Circle() : mArea(0), mCircumference(0) {}
  
 void Circle::setDimensions(int radius) {
     if (radius >= 0 ) {
-        this->radius = radius;
+        this->mRadius = radius;
         
         //width = w;
         setArea();
@@ -17,18 +17,18 @@ void Circle::setDimensions(int radius) {
 }
  
 void Circle::setArea() {
-    area = 3.14*pow(radius,2);
+    mArea = 3.14*pow(mRadius,2);
 }
  
 void Circle::setCircumference() {
-    circumference = 2*3.14*radius;
+    mCircumference = 2*3.14*mRadius;
 }
  
-double Circle::getArea() {
-    return area;
+double Circle::area() {
+    return mArea;
 }
  
-double Circle::getCircumference()  {
-    return circumference;
+double Circle::circumference()  {
+    return mCircumference;
 }
  

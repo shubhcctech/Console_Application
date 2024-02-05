@@ -2,12 +2,12 @@
 #include<cmath>
 using namespace std;
  
-Elipse::Elipse() : area(0), circumference(0) {}
+Elipse::Elipse() : mArea(0), mCircumference(0) {}
  
 void Elipse::setDimensions(int minAxis,int maxAxis) {
     if (minAxis >= 0 && maxAxis) {
-        this->minAxis = minAxis;
-        this->maxAxis = maxAxis;
+        this->mMinAxis = minAxis;
+        this->mMaxAxis = maxAxis;
         
         
         setArea();
@@ -18,18 +18,18 @@ void Elipse::setDimensions(int minAxis,int maxAxis) {
 }
  
 void Elipse::setArea() {
-    area = 3.14*minAxis*maxAxis;
+    mArea = 3.14*mMinAxis*mMaxAxis;
 }
  
 void Elipse::setCircumference() {
-    circumference = 3.14 * (3 * (maxAxis + minAxis) - sqrt((3 * maxAxis + minAxis) * (maxAxis + 3 * minAxis)));
+    mCircumference = 3.14 * (3 * (mMaxAxis + mMinAxis) - sqrt((3 * mMaxAxis + mMinAxis) * (mMaxAxis + 3 * mMinAxis)));
 }
  
-double Elipse::getArea() {
-    return area;
+double Elipse::area() {
+    return mArea;
 }
  
-double Elipse::getCircumference()  {
-    return circumference;
+double Elipse::circumference()  {
+    return mCircumference;
 }
  

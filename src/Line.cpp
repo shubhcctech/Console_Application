@@ -24,7 +24,7 @@ void Line::setLength() {
  
 
  
-int Line::getLength()  {
+int Line::length()  {
     return length;
 }
  

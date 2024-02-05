@@ -9,10 +9,10 @@ public:
     void setDimensions(int radius);
     void setArea();
     void setCircumference();
-    double getArea() ;
-    double getCircumference();
+    double area() ;
+    double circumference();
 private:
-    double radius;
-    double area;
-    double circumference;
+    double mRadius;
+    double mArea;
+    double mCircumference;
 };
