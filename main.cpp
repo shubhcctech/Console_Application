@@ -54,8 +54,8 @@
                 cin >> radius;
                 cout << "Properties of Rectangle are as follows: " << endl;
                 circle.setDimensions(radius);
-                cout << "Circumference for radius: "<<radius<<" is: "<<circle.getCircumference()<< endl;
-                cout << "Area of Circle for radius: "<<radius<<" is: "<<circle.getArea()<<endl;
+                cout << "Circumference for radius: "<<radius<<" is: "<<circle.circumference()<< endl;
+                cout << "Area of Circle for radius: "<<radius<<" is: "<<circle.area()<<endl;
                 break;
 
             case 3:
@@ -92,8 +92,8 @@
                 cin >> minAxis>>maxAxis;
                 cout << "Properties of Elipse are as follows: " << endl;
                 elipse.setDimensions(maxAxis,minAxis);
-                cout << "Circumference of Elipse for Major Axis: "<<maxAxis<<" and Minor Axis "<<minAxis<<" is: "<<elipse.getCircumference()<< endl;
-                cout << "Area of Elipse for Major Axis: "<<maxAxis<<" and Minor Axis "<<minAxis<<" is: "<<elipse.getArea()<< endl;
+                cout << "Circumference of Elipse for Major Axis: "<<maxAxis<<" and Minor Axis "<<minAxis<<" is: "<<elipse.circumference()<< endl;
+                cout << "Area of Elipse for Major Axis: "<<maxAxis<<" and Minor Axis "<<minAxis<<" is: "<<elipse.area()<< endl;
                 break;
              case 6:
                 Line line;
@@ -104,7 +104,7 @@
                 cin >> x1 >> x2>>y1>>y2;
                 cout << "Properties of Length are as follows: " << endl;
                 line.setDimensions(x1,x2,y1,y2);
-                cout << "Length of Line for Cordinates: "<<x1<<" "<<x2<<" "<<y1 <<" and "<<y2<<" is: "<<line.getLength()<< endl;
+                cout << "Length of Line for Cordinates: "<<x1<<" "<<x2<<" "<<y1 <<" and "<<y2<<" is: "<<line.length()<< endl;
                 break;
 
             case 7:
